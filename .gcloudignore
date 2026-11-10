@@ -1,0 +1,13 @@
+.git
+.next
+node_modules
+.env
+application_default_credentials.json
+.env.*
+!.env.example
+*.log
+
+# Local agent settings and credentials must never enter build/upload contexts.
+.agents/
+.codex/
+.aws/

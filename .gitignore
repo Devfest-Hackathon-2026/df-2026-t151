@@ -1,7 +1,16 @@
-# 秘密情報（コミットしない）
 .env
+application_default_credentials.json
 .env.*
 !.env.example
+node_modules/
+.next/
+dist/
+coverage/
+*.log
+*.tsbuildinfo
+next-env.d.ts
+
+# Submission repository exclusions
 .dev.vars
 .dev.vars.*
 !.dev.vars.example
@@ -12,23 +21,15 @@ service-account*.json
 credentials*.json
 google-services.json
 GoogleService-Info.plist
-
-# 依存関係とビルドの成果物
-node_modules/
-dist/
 build/
 out/
-.next/
 .wrangler/
 __pycache__/
 *.pyc
 .venv/
 venv/
-
-# OS とエディタ
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/*
 !.vscode/extensions.json
-*.log

@@ -1,0 +1,15 @@
+# Generated files and dependencies (also excluded by .gitignore)
+node_modules/
+.next/
+dist/
+coverage/
+next-env.d.ts
+*.tsbuildinfo
+package-lock.json
+
+# Local configuration and credentials
+.env
+.env.*
+.agents/
+.codex/
+.aws/

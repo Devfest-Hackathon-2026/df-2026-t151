@@ -1,0 +1,18 @@
+services:
+    app:
+        build:
+            context: .
+            target: dev
+        ports:
+            - '127.0.0.1:3000:3000'
+        volumes:
+            - .:/app
+            - dependencies:/app/node_modules
+            - next-cache:/app/.next
+        environment:
+            NEXT_TELEMETRY_DISABLED: '1'
+            WATCHPACK_POLLING: '1000'
+        command: sh -c "npm ci && npm run dev"
+volumes:
+    dependencies:
+    next-cache:

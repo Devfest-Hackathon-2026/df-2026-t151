@@ -1,0 +1,15 @@
+{
+    "plugins": ["prettier-plugin-tailwindcss"],
+    "tailwindStylesheet": "./src/app/globals.css",
+    "singleQuote": true,
+    "printWidth": 100,
+    "endOfLine": "lf",
+    "jsxSingleQuote": false,
+
+    "semi": true,
+    "tabWidth": 4,
+    "useTabs": false,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "arrowParens": "always"
+}

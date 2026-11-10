@@ -1,0 +1,12 @@
+{
+    "name": "Yorimichi",
+    "dockerComposeFile": "../compose.yaml",
+    "service": "app",
+    "workspaceFolder": "/app",
+    "overrideCommand": true,
+    "forwardPorts": [3000],
+    "postCreateCommand": "npm ci",
+    "customizations": {
+        "vscode": { "settings": { "typescript.tsdk": "node_modules/typescript/lib" } }
+    }
+}

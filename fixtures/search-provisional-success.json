@@ -1,0 +1,382 @@
+{
+    "requestId": "demo-provisional-only",
+    "dataMode": "demo",
+    "calculatedAt": "2026-11-08T01:00:00.000Z",
+    "arriveBy": "2026-11-08T03:00:00.000Z",
+    "outcome": "OPTIONS",
+    "destination": {
+        "placeId": "demo-destination",
+        "label": "目的地（検証用・架空）",
+        "latitude": 35.69,
+        "longitude": 139.7
+    },
+    "direct": {
+        "durationSeconds": 600,
+        "arrivalAt": "2026-11-08T01:10:00.000Z"
+    },
+    "context": {
+        "weather": {
+            "status": "unknown",
+            "provider": null,
+            "retrievedAt": null,
+            "validAt": null,
+            "summary": "天候不明（架空）",
+            "sourceUrl": null
+        },
+        "crowd": {
+            "status": "unknown",
+            "provider": null,
+            "retrievedAt": null,
+            "validAt": null,
+            "summary": "混雑情報なし（架空）",
+            "sourceUrl": null
+        }
+    },
+    "options": [
+        {
+            "optionId": "demo-mixed-0",
+            "optionToken": "demo-only-not-valid-in-production",
+            "place": {
+                "placeId": "demo-exterior",
+                "label": "街角の建物（検証用・架空）",
+                "latitude": 35.69,
+                "longitude": 139.7
+            },
+            "experienceId": "public-exterior-v2",
+            "title": "建築装飾を見比べる",
+            "description": "公道から建物の装飾や街並みを眺める、入場を伴わない外観観察です。",
+            "recommendationReasons": [
+                "移動・体験・余裕の時間が到着期限内に収まる見積もりです",
+                "取得した営業時間内に立ち寄れることを照合しました"
+            ],
+            "experienceDuration": {
+                "minSeconds": 300,
+                "maxSeconds": 900,
+                "sourceType": "estimate",
+                "sourceUrl": null,
+                "checkedAt": "2026-11-08T01:00:00.000Z",
+                "includesWait": false,
+                "conditions": "カテゴリ別の暫定目安。入場・館内利用・飲食・予約や行列待ちは体験に含めない。実測値や施設公表値ではありません"
+            },
+            "time": {
+                "legToStopSeconds": 600,
+                "waitSeconds": 0,
+                "waitTreatment": "not_applicable",
+                "experienceSeconds": 900,
+                "legToDestinationSeconds": 600,
+                "bufferSeconds": 600,
+                "requiredSeconds": 2700,
+                "extraTravelSeconds": 600,
+                "arrivalAt": "2026-11-08T01:35:00.000Z",
+                "slackSeconds": 5100,
+                "isProvisional": false,
+                "stopArrivalAt": "2026-11-08T01:10:00.000Z",
+                "experienceStartAt": "2026-11-08T01:10:00.000Z",
+                "stopDepartureAt": "2026-11-08T01:25:00.000Z"
+            },
+            "opening": {
+                "status": "verified_for_plan",
+                "provider": "Google Places",
+                "retrievedAt": "2026-11-08T01:00:00.000Z",
+                "sourceUrl": "https://example.com/fabricated-indoor"
+            },
+            "crowd": {
+                "status": "unknown",
+                "provider": null,
+                "retrievedAt": null,
+                "validAt": null,
+                "summary": "混雑情報なし",
+                "sourceUrl": null
+            },
+            "cost": {
+                "amount": null,
+                "currency": "JPY",
+                "label": "費用不明"
+            },
+            "sources": [
+                {
+                    "provider": "Google Places",
+                    "url": "https://example.com/fabricated-indoor"
+                },
+                {
+                    "provider": "Google Routes",
+                    "url": "https://maps.google.com/"
+                },
+                {
+                    "provider": "Google Maps：街角の建物（検証用・架空）",
+                    "url": "https://maps.google.com/?cid=demo-exterior"
+                }
+            ],
+            "warnings": [
+                {
+                    "code": "ESTIMATED_DURATION",
+                    "message": "体験時間は推定で、範囲の上限を使って計算しています"
+                },
+                {
+                    "code": "ACCESS_SOURCE",
+                    "message": "入場不要の外観観察として公開情報と照合しました。現地の利用条件を確認してください"
+                },
+                {
+                    "code": "AI_MAPS_GROUNDED",
+                    "message": "体験内容・利用条件はGoogle Mapsを参照したAIによる提案です。現地の条件を確認してください"
+                },
+                {
+                    "code": "CROWD_UNKNOWN",
+                    "message": "混雑情報は取得していません"
+                },
+                {
+                    "code": "ARRIVAL_ESTIMATE",
+                    "message": "到着時刻はAPI情報に基づく見積もりで、到着を保証するものではありません"
+                }
+            ]
+        },
+        {
+            "optionId": "demo-mixed-1",
+            "optionToken": "demo-only-not-valid-in-production",
+            "place": {
+                "placeId": "demo-cafe",
+                "label": "街角カフェ（検証用・架空）",
+                "latitude": 35.69,
+                "longitude": 139.7
+            },
+            "experienceId": "cafe-break-v1",
+            "title": "コーヒーを飲んでひと休み",
+            "description": "屋内のカフェで飲み物を楽しみながら、次の予定までひと息つく体験です。",
+            "recommendationReasons": [
+                "移動・体験・余裕の時間が期限に収まる見積もりです",
+                "営業時間は不明のため、利用前に確認してください"
+            ],
+            "experienceDuration": {
+                "minSeconds": 1200,
+                "maxSeconds": 1800,
+                "sourceType": "estimate",
+                "sourceUrl": null,
+                "checkedAt": "2026-11-08T01:00:00.000Z",
+                "includesWait": false,
+                "conditions": "カフェの種類別の計画用推定。会計・退出5分を含み、待ち時間は別途加算。実測値・施設公表値・実際の上限保証ではありません"
+            },
+            "time": {
+                "legToStopSeconds": 600,
+                "waitSeconds": 900,
+                "waitTreatment": "separate",
+                "experienceSeconds": 1800,
+                "legToDestinationSeconds": 600,
+                "bufferSeconds": 600,
+                "requiredSeconds": 4500,
+                "extraTravelSeconds": 600,
+                "arrivalAt": "2026-11-08T02:05:00.000Z",
+                "slackSeconds": 3300,
+                "isProvisional": true,
+                "stopArrivalAt": "2026-11-08T01:10:00.000Z",
+                "experienceStartAt": "2026-11-08T01:25:00.000Z",
+                "stopDepartureAt": "2026-11-08T01:55:00.000Z"
+            },
+            "opening": {
+                "status": "unknown",
+                "provider": "Google Places",
+                "retrievedAt": "2026-11-08T01:00:00.000Z",
+                "sourceUrl": "https://example.com/fabricated-indoor"
+            },
+            "crowd": {
+                "status": "unknown",
+                "provider": null,
+                "retrievedAt": null,
+                "validAt": null,
+                "summary": "混雑情報なし",
+                "sourceUrl": null
+            },
+            "cost": {
+                "amount": null,
+                "currency": "JPY",
+                "label": "飲食代別途（価格未確認）"
+            },
+            "sources": [
+                {
+                    "provider": "Google Places",
+                    "url": "https://example.com/fabricated-indoor"
+                },
+                {
+                    "provider": "Google Routes",
+                    "url": "https://maps.google.com/"
+                },
+                {
+                    "provider": "Google Maps：街角カフェ（検証用・架空）",
+                    "url": "https://maps.google.com/?cid=demo-cafe"
+                }
+            ],
+            "warnings": [
+                {
+                    "code": "ESTIMATED_WAIT",
+                    "message": "待ち時間は実測ではなく種類別の計画用推定（5〜15分）です。上限を使って計算していますが、実際には超過する場合があります"
+                },
+                {
+                    "code": "ESTIMATED_DURATION",
+                    "message": "体験時間は推定で、範囲の上限を使って計算しています"
+                },
+                {
+                    "code": "AI_MAPS_GROUNDED",
+                    "message": "体験内容・利用条件はGoogle Mapsを参照したAIによる提案です。現地の条件を確認してください"
+                },
+                {
+                    "code": "CROWD_UNKNOWN",
+                    "message": "混雑情報は取得していません"
+                },
+                {
+                    "code": "ARRIVAL_ESTIMATE",
+                    "message": "到着時刻はAPI情報に基づく見積もりで、到着を保証するものではありません"
+                },
+                {
+                    "code": "UNCONFIRMED_OPENING",
+                    "message": "訪問時間帯の営業時間は不明です"
+                },
+                {
+                    "code": "UNCONFIRMED_BUSINESS_STATUS",
+                    "message": "営業状態は不明です"
+                },
+                {
+                    "code": "UNCONFIRMED_RESERVATION",
+                    "message": "予約なしで利用できるかは不明です"
+                },
+                {
+                    "code": "UNCONFIRMED_ENTRY_CUTOFF",
+                    "message": "最終入場・受付締切は不明です"
+                }
+            ]
+        },
+        {
+            "optionId": "demo-mixed-2",
+            "optionToken": "demo-only-not-valid-in-production",
+            "place": {
+                "placeId": "demo-small_exhibit",
+                "label": "ギャラリー（検証用・架空）",
+                "latitude": 35.69,
+                "longitude": 139.7
+            },
+            "experienceId": "small-exhibit-v1",
+            "title": "小さな展示で作品を鑑賞する",
+            "description": "小規模な屋内展示で、気になる作品をゆっくり眺める体験です。",
+            "recommendationReasons": [
+                "移動・体験・余裕の時間が期限に収まる見積もりです",
+                "営業時間は不明のため、利用前に確認してください"
+            ],
+            "experienceDuration": {
+                "minSeconds": 1200,
+                "maxSeconds": 2100,
+                "sourceType": "estimate",
+                "sourceUrl": null,
+                "checkedAt": "2026-11-08T01:00:00.000Z",
+                "includesWait": false,
+                "conditions": "小規模展示の種類別の計画用推定。会計・退出5分を含み、待ち時間は別途加算。実測値・施設公表値・実際の上限保証ではありません"
+            },
+            "time": {
+                "legToStopSeconds": 600,
+                "waitSeconds": 600,
+                "waitTreatment": "separate",
+                "experienceSeconds": 2100,
+                "legToDestinationSeconds": 600,
+                "bufferSeconds": 600,
+                "requiredSeconds": 4500,
+                "extraTravelSeconds": 600,
+                "arrivalAt": "2026-11-08T02:05:00.000Z",
+                "slackSeconds": 3300,
+                "isProvisional": true,
+                "stopArrivalAt": "2026-11-08T01:10:00.000Z",
+                "experienceStartAt": "2026-11-08T01:20:00.000Z",
+                "stopDepartureAt": "2026-11-08T01:55:00.000Z"
+            },
+            "opening": {
+                "status": "unknown",
+                "provider": "Google Places",
+                "retrievedAt": "2026-11-08T01:00:00.000Z",
+                "sourceUrl": "https://example.com/fabricated-indoor"
+            },
+            "crowd": {
+                "status": "unknown",
+                "provider": null,
+                "retrievedAt": null,
+                "validAt": null,
+                "summary": "混雑情報なし",
+                "sourceUrl": null
+            },
+            "cost": {
+                "amount": null,
+                "currency": "JPY",
+                "label": "入場・利用料金は現地確認"
+            },
+            "sources": [
+                {
+                    "provider": "Google Places",
+                    "url": "https://example.com/fabricated-indoor"
+                },
+                {
+                    "provider": "Google Routes",
+                    "url": "https://maps.google.com/"
+                },
+                {
+                    "provider": "Google Maps：ギャラリー（検証用・架空）",
+                    "url": "https://maps.google.com/?cid=demo-small_exhibit"
+                }
+            ],
+            "warnings": [
+                {
+                    "code": "ESTIMATED_WAIT",
+                    "message": "待ち時間は実測ではなく種類別の計画用推定（0〜10分）です。上限を使って計算していますが、実際には超過する場合があります"
+                },
+                {
+                    "code": "ESTIMATED_DURATION",
+                    "message": "体験時間は推定で、範囲の上限を使って計算しています"
+                },
+                {
+                    "code": "AI_MAPS_GROUNDED",
+                    "message": "体験内容・利用条件はGoogle Mapsを参照したAIによる提案です。現地の条件を確認してください"
+                },
+                {
+                    "code": "CROWD_UNKNOWN",
+                    "message": "混雑情報は取得していません"
+                },
+                {
+                    "code": "ARRIVAL_ESTIMATE",
+                    "message": "到着時刻はAPI情報に基づく見積もりで、到着を保証するものではありません"
+                },
+                {
+                    "code": "UNCONFIRMED_OPENING",
+                    "message": "訪問時間帯の営業時間は不明です"
+                },
+                {
+                    "code": "UNCONFIRMED_BUSINESS_STATUS",
+                    "message": "営業状態は不明です"
+                },
+                {
+                    "code": "UNCONFIRMED_RESERVATION",
+                    "message": "予約なしで利用できるかは不明です"
+                },
+                {
+                    "code": "UNCONFIRMED_ENTRY_CUTOFF",
+                    "message": "最終入場・受付締切は不明です"
+                }
+            ]
+        }
+    ],
+    "warnings": [
+        {
+            "code": "DEMO_DATA",
+            "message": "全て自動テスト用の架空データです。実APIやアプリ画面では読み込みません"
+        }
+    ],
+    "attributions": ["自動テスト専用の架空データ"],
+    "exclusions": [
+        {
+            "stage": "candidate-selection",
+            "placeLabel": "架空の閉業施設（テスト専用）",
+            "reason": "NOT_OPERATIONAL",
+            "source": {
+                "provider": "Google Places",
+                "url": null
+            },
+            "facts": {
+                "businessStatus": "CLOSED_PERMANENTLY",
+                "openingStatus": "unknown"
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "requestId": "demo-places-001",
+    "places": [
+        {
+            "placeId": "demo-destination",
+            "label": "新宿の目的地（架空）",
+            "address": "東京都新宿区 デモ通り1（架空）",
+            "typeLabel": "駅（架空）",
+            "latitude": 35.69,
+            "longitude": 139.7
+        }
+    ],
+    "attributions": [{ "provider": "demo", "providerUri": null }]
+}

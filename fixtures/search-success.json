@@ -1,0 +1,98 @@
+{
+    "requestId": "search-001",
+    "dataMode": "demo",
+    "calculatedAt": "2026-11-07T14:00:00+09:00",
+    "arriveBy": "2026-11-07T15:30:00+09:00",
+    "outcome": "OPTIONS",
+    "destination": {
+        "placeId": "demo-destination",
+        "label": "新宿の目的地（架空）",
+        "latitude": 35.69,
+        "longitude": 139.7
+    },
+    "direct": { "durationSeconds": 1200, "arrivalAt": "2026-11-07T14:20:00+09:00" },
+    "context": {
+        "weather": {
+            "status": "available",
+            "provider": "demo",
+            "retrievedAt": "2026-11-07T14:00:00+09:00",
+            "validAt": "2026-11-07T14:15:00+09:00",
+            "summary": "雨予報（架空）",
+            "sourceUrl": null
+        },
+        "crowd": {
+            "status": "unknown",
+            "provider": null,
+            "retrievedAt": null,
+            "validAt": null,
+            "summary": "混雑情報なし",
+            "sourceUrl": null
+        }
+    },
+    "options": [
+        {
+            "optionId": "demo-option-1",
+            "optionToken": "demo-only-not-valid-in-production",
+            "place": {
+                "placeId": "demo-stop",
+                "label": "屋内の地域展示（架空）",
+                "latitude": 35.691,
+                "longitude": 139.702
+            },
+            "experienceId": "demo-exhibition",
+            "title": "新宿の昔と今を見比べる（架空の体験）",
+            "description": "画面確認用の仮データです。実際の施設・営業・経路に基づく案内ではありません。",
+            "recommendationReasons": ["訪問時間帯に雨予報のため屋内を優先（架空）"],
+            "experienceDuration": {
+                "minSeconds": 1200,
+                "maxSeconds": 1800,
+                "sourceType": "estimate",
+                "sourceUrl": null,
+                "checkedAt": "2026-11-07T14:00:00+09:00",
+                "includesWait": false,
+                "conditions": "展示を見る架空の短時間体験"
+            },
+            "time": {
+                "legToStopSeconds": 600,
+                "waitSeconds": 0,
+                "waitTreatment": "not_applicable",
+                "experienceSeconds": 1800,
+                "legToDestinationSeconds": 1200,
+                "bufferSeconds": 600,
+                "requiredSeconds": 4200,
+                "extraTravelSeconds": 600,
+                "stopArrivalAt": "2026-11-07T14:10:00+09:00",
+                "experienceStartAt": "2026-11-07T14:10:00+09:00",
+                "stopDepartureAt": "2026-11-07T14:40:00+09:00",
+                "arrivalAt": "2026-11-07T15:00:00+09:00",
+                "slackSeconds": 1800,
+                "isProvisional": false
+            },
+            "opening": {
+                "status": "verified_for_plan",
+                "provider": "demo",
+                "retrievedAt": "2026-11-07T14:00:00+09:00",
+                "sourceUrl": null
+            },
+            "crowd": {
+                "status": "unknown",
+                "provider": null,
+                "retrievedAt": null,
+                "validAt": null,
+                "summary": "混雑情報なし",
+                "sourceUrl": null
+            },
+            "cost": { "amount": null, "currency": "JPY", "label": "費用不明" },
+            "sources": [],
+            "warnings": [
+                { "code": "ESTIMATED_DURATION", "message": "体験時間は推定です" },
+                { "code": "DEMO_DATA", "message": "施設・天候・経路はすべて画面確認用です" }
+            ]
+        }
+    ],
+    "warnings": [
+        { "code": "DEMO_DATA", "message": "実検索結果ではありません" },
+        { "code": "CROWD_UNKNOWN", "message": "混雑状況は取得していません" }
+    ],
+    "attributions": []
+}
